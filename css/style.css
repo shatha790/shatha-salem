@@ -33,6 +33,8 @@ body {
 }
 .container-fluid {
   background-image: var(--image-gradient), url(../img/home-bg.jpg);
+    -moz-background-img: var(--image-gradient), url(../img/home-bg.jpg);
+  -webkit-background-img: var(--image-gradient), url(../img/home-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: top;
