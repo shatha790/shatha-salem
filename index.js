@@ -38,6 +38,15 @@ function updateText() {
 /* -------------------------------------*/
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
+const navItem = document.querySelectorAll(".nav-list li");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+});
+
+// BIND CLICK EVENT ON ALL LINKS
+navItem.forEach((navItems) => {
+  navItems.addEventListener("click", () => {
+    // ON CLICK, REMOVE active CLASS FROM navBarLinks
+    headerEl.classList.remove("nav-open");
+  });
 });
